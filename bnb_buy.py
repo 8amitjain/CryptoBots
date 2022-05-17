@@ -42,6 +42,7 @@ pancakeswap2_txn = contract.functions.swapExactETHForTokens(    # swapExactToken
     'nonce': nonce,
 })
 
+
 signed_txn = web3.eth.account.sign_transaction(pancakeswap2_txn, private_key="")  # Sign the txn
 tx_token = web3.eth.send_raw_transaction(signed_txn.rawTransaction)  # Send the txn
 

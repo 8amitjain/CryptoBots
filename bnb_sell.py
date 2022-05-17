@@ -64,6 +64,7 @@ time.sleep(10)
 print(f"Swapping {tokenValue2} {symbol} for BNB")
 # Swaping exact Token for ETH
 
+
 pancakeswap2_txn = contract.functions.swapExactTokensForETH(
     tokenValue, 0,
     [contract_id, spend],
