@@ -1,6 +1,5 @@
 from web3 import Web3
 from abi import abi
-# import config
 import time
 
 
